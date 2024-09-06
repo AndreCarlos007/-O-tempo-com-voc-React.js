@@ -1,10 +1,10 @@
-
 import { useState, useRef } from "react";
 import axios from "axios";
 import "./App.css";
 import Tempinfo from "./components/tempoInfo/Tempinfo";
 import MapComponent from './components/Mapa/MapComponent';
 import TempInfo5dias from './components/tempInfo5dias/TempInfo5dias'
+
 
 function App() {
   const [tempo, setTempo] = useState(null);
@@ -16,9 +16,9 @@ function App() {
     
     const cidade = inputPesquisar.current.value;
     const keyApi = "5e6ab9342e87fc5a2634ab608987d7ff";
-
+    const urlApi5dias = `https://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${keyApi}&lang=pt_br&units=metric`;
     const urlApi = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${keyApi}&lang=pt_br&units=metric`;
-    const urlApi5dias = `http://api.openweathermap.org/data/2.5/forecast?q=${cidade}&appid=${keyApi}&lang=pt_br&units=metric`;
+    
     const dadosApi = await axios.get(urlApi);
     const dadosApi5dias = await axios.get(urlApi5dias);
 
