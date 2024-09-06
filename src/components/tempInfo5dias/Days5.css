@@ -1,0 +1,77 @@
+.weather-container {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    padding: 2px;
+    text-align: center;
+}
+
+.weather-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: azure;
+}
+
+.weather-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.weather-item {
+    text-align: center;
+    background-color: rgba(245, 251, 251, 0.271);
+    border-radius: 10px;
+    width: 180px;
+    align-items: center; 
+    justify-content: center; 
+    margin: 10px; 
+    box-sizing: border-box;
+    transition: transform 300ms ease;
+}
+
+.weather-item:hover {
+    transform: translateY(-1rem);
+}
+
+.forecast-day {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.forecast-descricao {
+    text-transform: capitalize;
+}
+
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+    .weather-container h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .weather-item {
+        width: 150px;
+        margin: 5px;
+    }
+
+    .forecast-day {
+        font-size: 1rem;
+    }
+}
+
+/* Media Query para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    .weather-container h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .weather-item {
+        width: 120px;
+        margin: 5px;
+    }
+
+    .forecast-day {
+        font-size: 0.9rem;
+    }
+}
