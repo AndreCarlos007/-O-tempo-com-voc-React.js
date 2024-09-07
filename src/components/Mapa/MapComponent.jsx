@@ -15,7 +15,7 @@ const MapComponent = ({ location }) => {
   useEffect(() => {
     const updateStyle = () => {
       const width = window.innerWidth;
-  
+
       if (width <= 480) {
         setStyle(prevStyle => ({
           ...prevStyle,
@@ -24,7 +24,7 @@ const MapComponent = ({ location }) => {
           margin: '0 auto',
           position: 'relative',
         }));
-      } else if (width <= 768) { 
+      } else if (width <= 768) {
         setStyle(prevStyle => ({
           ...prevStyle,
           height: '35vh',
@@ -48,7 +48,7 @@ const MapComponent = ({ location }) => {
           margin: '0 auto',
           position: 'relative',
         }));
-      } else { 
+      } else {
         setStyle(prevStyle => ({
           ...prevStyle,
           height: '38vh',

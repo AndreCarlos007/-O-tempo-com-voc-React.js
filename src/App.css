@@ -143,8 +143,7 @@ html {
     50% { opacity: 1; }
     100% { opacity: 0.5; }
 }
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -329,8 +328,7 @@ html {
 }
 
 #stars:after {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     content: '';
     position: absolute;
     top: 2000px;
@@ -521,8 +519,7 @@ html {
 
     100% { opacity: infinite; }
 }
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -707,8 +704,7 @@ html {
 }
 
 #stars2:after {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     content: '';
     position: absolute;
     top: 2000px;

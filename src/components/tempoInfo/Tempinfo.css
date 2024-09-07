@@ -101,8 +101,6 @@
 /* Media Query para monitores maiores e ultrawide */
 @media (min-width: 1600px) {
     .caixaInfo {
-        overflow-x: hidden;
-    overflow-y: scroll;
         width: 20%; /* Largura aumentada para monitores maiores */
         padding: 20px; /* Padding aumentado */
     }
@@ -131,8 +129,6 @@
 /* Media Query para monitores muito grandes (4K e similares) */
 @media (min-width: 1920px) {
     .caixaInfo {
-        overflow-x: hidden;
-    overflow-y: scroll;
         width: 15%; /* Largura aumentada para monitores muito grandes */
         padding: 25px; /* Padding aumentado */
     }
@@ -161,8 +157,6 @@
 /* Media Query para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .caixaInfo {
-        overflow-x: hidden;
-    overflow-y: scroll;
         width: 75%; /* Largura ajustada para dispositivos muito pequenos */
         padding: 2px; /* Menor padding */
     }
@@ -192,8 +186,6 @@
 /* Media Query para iPhones e dispositivos semelhantes */
 @media (max-device-width: 812px) and (-webkit-device-pixel-ratio: 2) { 
     .caixaInfo {
-        overflow-x: hidden;
-    overflow-y: scroll;
         width: 65%; /* Largura ajustada para iPhones */
         padding: 2px;
     }

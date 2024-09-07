@@ -22,9 +22,9 @@
     background-color: rgba(245, 251, 251, 0.271);
     border-radius: 10px;
     width: 180px;
-    align-items: center; 
-    justify-content: center; 
-    margin: 10px; 
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     box-sizing: border-box;
     transition: transform 300ms ease;
 }
@@ -45,8 +45,7 @@
 /* Media Query para dispositivos menores */
 @media (max-width: 768px) {
     .weather-container h3 {
-        overflow-x: hidden;
-        overflow-y: scroll;
+
         font-size: 1.2rem;
         margin-bottom: 10px;
     }
@@ -64,8 +63,6 @@
 /* Media Query para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .weather-container h3 {
-        overflow-x: hidden;
-        overflow-y: scroll;
         font-size: 1rem;
         margin-bottom: 5px;
     }
