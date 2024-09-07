@@ -1,8 +1,10 @@
 import { useState, useRef } from "react";
 import axios from "axios";
 import "./App.css";
+
 import Tempinfo from "./components/tempoInfo/Tempinfo";
 import MapComponent from './components/Mapa/MapComponent';
+
 import TempInfo5dias from './components/tempInfo5dias/TempInfo5dias'
 
 
@@ -42,12 +44,14 @@ function App() {
         className="input"
       />
             <button className="btn" onClick={buscarCidade}>Pesquisar</button>
+
             </div>
     
     </nav>
       <section className="wrapper">
         <div id="stars"></div>
         <div id="stars2"></div>
+        
         
 
       <div style={{ display: 'flex', justifyContent: 'center', justifyItems: '',alignItems: 'center', height: '45vh', }}>

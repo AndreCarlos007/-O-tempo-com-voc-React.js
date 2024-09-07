@@ -12,7 +12,7 @@ function TempInfo5dias( {tempo5dias}) {
             }
     }
     
-    const proxDias = Object.values(diasApi).slice(1,6)
+    const proxDias = Object.values(diasApi).slice(0,4)
 
     function convertData(date){
         const newDate = new Date(date.dt * 1000).toLocaleDateString('pt-BR', {weekday: 'long', day: '2-digit'})
@@ -25,7 +25,7 @@ function TempInfo5dias( {tempo5dias}) {
         <div
         
         className="weather-container">
-            <h3>Previsão próximos 5 dias</h3>
+            <h3>Previsão dos próximos 4 dias</h3>
 
             <div 
             className="weather-list">
