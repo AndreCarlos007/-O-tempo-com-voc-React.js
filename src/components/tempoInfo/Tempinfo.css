@@ -43,8 +43,6 @@
 /* Media Query para tablets e notebooks */
 @media (min-width: 768px) and (max-width: 1440px) {
     .caixaInfo {
-        overflow-x: hidden;
-    overflow-y: scroll;
         width: 30%; /* Largura aumentada para tablets e notebooks */
         padding: 10px; /* Padding aumentado */
     }
