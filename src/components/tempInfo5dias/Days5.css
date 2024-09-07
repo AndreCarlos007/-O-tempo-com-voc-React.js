@@ -42,6 +42,40 @@
     text-transform: capitalize;
 }
 
+/* Media Query para dispositivos de tamanhos intermediários */
+@media (max-width: 1440px) {
+    .weather-container h3 {
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+
+    .weather-item {
+        width: 200px;
+        margin: 12px;
+    }
+
+    .forecast-day {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query para tablets e dispositivos pequenos */
+@media (max-width: 1024px) {
+    .weather-container h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .weather-item {
+        width: 160px;
+        margin: 8px;
+    }
+
+    .forecast-day {
+        font-size: 1.1rem;
+    }
+}
+
 /* Media Query para dispositivos menores */
 @media (max-width: 768px) {
     .weather-container h3 {
@@ -73,5 +107,39 @@
 
     .forecast-day {
         font-size: 0.9rem;
+    }
+}
+
+/* Media Query para monitores ultrawide e grandes desktops */
+@media (min-width: 1600px) {
+    .weather-container h3 {
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+
+    .weather-item {
+        width: 220px;
+        margin: 15px;
+    }
+
+    .forecast-day {
+        font-size: 1.3rem;
+    }
+}
+
+/* Media Query para telas de tamanhos extremos, como monitores 4K */
+@media (min-width: 1920px) {
+    .weather-container h3 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .weather-item {
+        width: 240px;
+        margin: 20px;
+    }
+
+    .forecast-day {
+        font-size: 1.4rem;
     }
 }

@@ -1,94 +1,211 @@
+/* Estilo base */
 .caixaInfo {
     background-color: rgba(255, 255, 255, 0.805);
-    padding: 2px;
-    width: 40%;
-    margin: -25px 100px 0px -350px;
+    padding: 3px; /* Padding base */
+    width: 16%; /* Largura base */
+    margin: 0 auto; /* Centraliza horizontalmente */
     text-align: center;
-    border-radius: 20px;
+    border-radius: 8px; /* Bordas menores */
+    display: flex; /* Utiliza flexbox para centralizar os elementos internos */
+    flex-direction: column; /* Alinha os filhos em coluna */
+    align-items: center; /* Centraliza horizontalmente os filhos */
 }
 
 .tempoInfo {
-    font-size: 2rem;
+    font-size: 1rem; /* Fonte base */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .tempoInfo img {
-    width: 100px;
+    width: 40px; /* Imagens base */
 }
 
 .temperatura {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem; /* Fonte base */
 }
 
 .descricao {
     text-transform: capitalize;
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 0.7rem; /* Fonte base */
+    margin-bottom: 2px; /* Margem base */
 }
 
 .detalhes {
     display: flex;
     justify-content: space-around;
+    width: 100%; /* Garante que o espaço seja distribuído */
+    flex-direction: column; /* Ajustado para coluna em telas menores */
 }
 
-/* Media Query para dispositivos menores */
-@media (max-width: 768px) {
+/* Media Query para tablets e notebooks */
+@media (min-width: 768px) and (max-width: 1440px) {
     .caixaInfo {
-        width: 25%;
-        margin: -10px 20px 0px -20px;
-        padding: 10px;
+        width: 30%; /* Largura aumentada para tablets e notebooks */
+        padding: 10px; /* Padding aumentado */
     }
 
     .tempoInfo {
-        font-size: 1.5rem;
+        font-size: 1.4rem; /* Fonte aumentada */
     }
 
     .tempoInfo img {
-        width: 70px;
+        width: 60px; /* Imagem aumentada */
     }
 
     .temperatura {
-        font-size: 1.5rem;
+        font-size: 1.4rem; /* Fonte aumentada */
     }
 
     .descricao {
-        font-size: 1rem;
+        font-size: 1rem; /* Fonte aumentada */
     }
 
     .detalhes {
-        flex-direction: column;
+        flex-direction: row; /* Direção de linha para melhor uso do espaço */
+    }
+}
+
+/* Media Query para telas grandes e monitores ultrawide */
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .caixaInfo {
+        width: 25%; /* Largura aumentada para telas grandes */
+        padding: 15px; /* Padding aumentado */
+    }
+
+    .tempoInfo {
+        font-size: 1.6rem; /* Fonte aumentada */
+    }
+
+    .tempoInfo img {
+        width: 80px; /* Imagem aumentada */
+    }
+
+    .temperatura {
+        font-size: 1.6rem; /* Fonte aumentada */
+    }
+
+    .descricao {
+        font-size: 1.2rem; /* Fonte aumentada */
+    }
+
+    .detalhes {
+        flex-direction: row; /* Direção de linha para melhor uso do espaço */
+    }
+}
+
+/* Media Query para monitores maiores e ultrawide */
+@media (min-width: 1600px) {
+    .caixaInfo {
+        width: 20%; /* Largura aumentada para monitores maiores */
+        padding: 20px; /* Padding aumentado */
+    }
+
+    .tempoInfo {
+        font-size: 1.8rem; /* Fonte aumentada */
+    }
+
+    .tempoInfo img {
+        width: 100px; /* Imagem aumentada */
+    }
+
+    .temperatura {
+        font-size: 1.8rem; /* Fonte aumentada */
+    }
+
+    .descricao {
+        font-size: 1.4rem; /* Fonte aumentada */
+    }
+
+    .detalhes {
+        flex-direction: row; /* Direção de linha para melhor uso do espaço */
+    }
+}
+
+/* Media Query para monitores muito grandes (4K e similares) */
+@media (min-width: 1920px) {
+    .caixaInfo {
+        width: 15%; /* Largura aumentada para monitores muito grandes */
+        padding: 25px; /* Padding aumentado */
+    }
+
+    .tempoInfo {
+        font-size: 2rem; /* Fonte aumentada */
+    }
+
+    .tempoInfo img {
+        width: 120px; /* Imagem aumentada */
+    }
+
+    .temperatura {
+        font-size: 2rem; /* Fonte aumentada */
+    }
+
+    .descricao {
+        font-size: 1.6rem; /* Fonte aumentada */
+    }
+
+    .detalhes {
+        flex-direction: row; /* Direção de linha para melhor uso do espaço */
     }
 }
 
 /* Media Query para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .caixaInfo {
-        width: 95%;
-        margin: 0;
-        padding: 5px;
+        width: 75%; /* Largura ajustada para dispositivos muito pequenos */
+        padding: 2px; /* Menor padding */
     }
 
     .tempoInfo {
-        font-size: 1.2rem;
+        font-size: 0.7rem; /* Fonte menor */
     }
 
     .tempoInfo img {
-        width: 50px;
+        width: 25px; /* Imagem menor */
     }
 
     .temperatura {
-        font-size: 1.2rem;
+        font-size: 0.7rem; /* Fonte menor */
     }
 
     .descricao {
-        font-size: 0.9rem;
+        font-size: 0.5rem; /* Fonte menor */
     }
 
     .detalhes {
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Centraliza os itens da coluna */
+    }
+}
+
+/* Media Query para iPhones e dispositivos semelhantes */
+@media (max-device-width: 812px) and (-webkit-device-pixel-ratio: 2) { 
+    .caixaInfo {
+        width: 65%; /* Largura ajustada para iPhones */
+        padding: 2px;
+    }
+
+    .tempoInfo {
+        font-size: 0.7rem; /* Fonte menor */
+    }
+
+    .tempoInfo img {
+        width: 25px; /* Imagem menor */
+    }
+
+    .temperatura {
+        font-size: 0.7rem; /* Fonte menor */
+    }
+
+    .descricao {
+        font-size: 0.4rem; /* Fonte menor */
+    }
+
+    .detalhes {
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens da coluna */
     }
 }
