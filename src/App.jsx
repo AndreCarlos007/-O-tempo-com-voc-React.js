@@ -40,7 +40,7 @@ function App() {
           <input
             ref={inputPesquisar}
             type="text"
-            placeholder="Digite o nome da sua cidade!"
+            placeholder="Ex: Brasilia, BR"
             className="input"
           />
           <button className="btn" onClick={buscarCidade}>Pesquisar</button>

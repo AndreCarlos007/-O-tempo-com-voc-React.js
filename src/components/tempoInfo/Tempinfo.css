@@ -155,7 +155,8 @@
 /* Media Query para dispositivos muito pequenos */
 @media (max-width: 480px) {
     .caixaInfo {
-        width: 75%; /* Largura ajustada para dispositivos muito pequenos */
+        height: 90%;
+        width: 70%; /* Largura ajustada para dispositivos muito pequenos */
         padding: 2px; /* Menor padding */
     }
 

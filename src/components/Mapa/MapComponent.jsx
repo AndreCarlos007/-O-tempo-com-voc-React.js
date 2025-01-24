@@ -19,7 +19,7 @@ const MapComponent = ({ location }) => {
       if (width <= 480) {
         setStyle(prevStyle => ({
           ...prevStyle,
-          height: '30vh',
+          height: '25vh',
           width: '100%',
           margin: '0 auto',
           position: 'relative',
@@ -43,18 +43,18 @@ const MapComponent = ({ location }) => {
       } else if (width <= 1440) { // Para monitores entre 1024px e 1440px
         setStyle(prevStyle => ({
           ...prevStyle,
-          height: '45vh',
-          width: '70%',
+          height: '40vh',
+          width: '60%',
           margin: '0 auto',
           position: 'relative',
         }));
       } else {
         setStyle(prevStyle => ({
           ...prevStyle,
-          height: '38vh',
-          width: '400px',
-          margin: '-330px 2px 100px 1100px',
-          position: 'fixed',
+          height: '40vh',
+          width: '60%',
+          margin: '0 auto',
+          position: 'relative',
         }));
       }
     };
